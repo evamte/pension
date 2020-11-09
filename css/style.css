@@ -1,18 +1,31 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: lightgrey;
+}
+
 nav {
     background-color: white;
     text-align: right;
     margin-top: 2em;
+
 }
 
 nav ul {
     list-style-type: none;
     margin-top: 0em;
+    padding: 1.5em;
 }
 
 
 nav li {
     display: inline-flex;
-    margin-right: 2em;
+    margin-right: 4em;
 }
 
 nav li a {
@@ -25,9 +38,24 @@ li a {
 
 .logo {
     position: absolute;
-    top: 1em;
+    top: 2.8em;
     max-width: 14em;
     text-decoration: none;
+    left: 1em;
+}
+
+.search {
+    max-width: 1.5em;
+}
+
+.contact {
+    max-width: 1.5em;
+    height: 1.5em;
+}
+
+.lock {
+    max-width: 1.5em;
+    height: 1.5em;
 }
 
 h1 {
