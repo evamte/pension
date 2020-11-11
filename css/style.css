@@ -9,6 +9,8 @@ body {
     background-color: #ECEFF2;
 }
 
+/* MENUBAR */
+
 .akademiker_pension {
     text-align: right;
     margin-top: 1em;
@@ -127,6 +129,8 @@ label {
     height: 1.5em;
 }
 
+/* HEADER */
+
 #header_cover {
     display: grid;
     grid-template-columns: 1fr;
@@ -172,6 +176,9 @@ header {
     padding: 0.5em;
     z-index: -1;
 }
+
+
+/* FOOTER */
 
 footer {
     background-color: #386082;
