@@ -177,6 +177,32 @@ header {
     z-index: -1;
 }
 
+/* YOUR SITUATION */
+
+#situation {
+    margin-top: 5em;
+    background-color: #FFFF;
+    padding: 1em;
+    border-radius: 2em;
+    margin: 3.5em;
+}
+
+#situation h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.7em;
+    text-align: center;
+    color: #386082
+}
+
+#situation h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    color: #386082;
+    padding-left: 15em;
+    padding-right: 15em;
+    line-height: 1.5em;
+}
 /* TOP PICKS */
 
 #columns_top_picks {
@@ -194,6 +220,7 @@ header {
     margin-left: 5vw;
     margin-bottom: 0em;
     margin-top: 2em;
+    opacity: 80%;
 }
 
 #pick_1 {
