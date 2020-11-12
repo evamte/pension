@@ -6,7 +6,20 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #ECEFF2;
+    background-color: var(--colour-3);
+}
+
+/* FONTS & COLORS */
+
+:root {
+    --colour-1: #FF9632;
+    --colour-2: #386082;
+    --colour-3: #ECEFF2;
+    --colour-4: #2F2F2F;
+    --colour-5: #FFFFFF;
+    --colour-6: steelblue;
+    --font-1: 'Aleo', serif;
+    --font-2: 'Montserrat', sans-serif;
 }
 
 /* MENUBAR */
@@ -22,7 +35,7 @@ body {
     text-decoration: none;
     cursor: pointer;
     color: gray;
-    font-family: 'Aleo', serif;
+    font-family: var(--font-1);
     font-size: 0.7em;
 
 }
@@ -65,7 +78,7 @@ body {
 
 .menu {
     margin: 0;
-    background-color: white;
+    background-color: var(--colour-5);
     text-align: center;
     width: 100%;
     display: none;
@@ -76,13 +89,13 @@ body {
     color: gray;
     margin: 0;
     clear: right;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-2);
     font-size: 1em;
     padding-right: 1.5em;
 }
 
 span {
-    color: #FF9632;
+    color: var(--colour-1);
 }
 
 label {
@@ -158,21 +171,21 @@ header {
 
 .title {
     text-align: center;
-    color: #FFFF;
+    color: var(--colour-5);
     font-size: 4em;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-2);
     padding: 0.5em;
     z-index: -1;
 }
 
 .description {
     text-align: center;
-    color: #FFFF;
+    color: var(--colour-5);
     font-size: 1.5em;
     padding: 2em;
     margin-top: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-2);
     padding: 0.5em;
     z-index: -1;
 }
@@ -189,7 +202,7 @@ header {
 }
 
 #top_picks h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-2);
     font-size: 2.7em;
     margin-left: 5vw;
     margin-bottom: 0em;
@@ -198,7 +211,6 @@ header {
 
 #pick_1 {
     display: grid;
-    background-color: #386082;
     padding: 2.5em;
     border-top-left-radius: 2em;
     border-bottom-right-radius: 2em;
@@ -209,7 +221,6 @@ header {
 
 #pick_2 {
     display: grid;
-    background-color: #386082;
     padding: 2.5em;
     border-top-left-radius: 2em;
     border-bottom-right-radius: 2em;
@@ -220,7 +231,7 @@ header {
 
 #pick_3 {
     display: grid;
-    background-color: #386082;
+    background-color: var(--colour-2);
     padding: 2.5em;
     border-top-left-radius: 2em;
     border-bottom-right-radius: 2em;
@@ -230,30 +241,30 @@ header {
 }
 
 #top_picks h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-2);
     font-size: 1.1em;
-    color: #FFFF;
+    color: var(--colour-5);
     margin-top: 8em;
 }
 
 #top_picks h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-2);
     font-size: 0.8em;
-    color: #FFFF;
+    color: var(--colour-5);
     margin-bottom: 6em;
 }
 
 #top_picks h5 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-2);
     font-size: 0.5em;
-    color: #FFFF;
+    color: var(--colour-5);
     margin: 0;
 }
 
 #top_picks h4 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-2);
     font-size: 0.8em;
-    color: #FFFF;
+    color: var(--colour-5);
     margin-top: 0.5em;
 }
 
@@ -277,7 +288,7 @@ i {
 }
 
 .square_1 {
-    background-color: steelblue;
+    background-color: var(--colour-6);
     padding: 1em;
     border-radius: 1em;
     height: 2em;
@@ -290,7 +301,7 @@ i {
 }
 
 .square_2 {
-    background-color: steelblue;
+    background-color: var(--colour-6);
     padding: 1em;
     border-radius: 1em;
     height: 2em;
@@ -303,7 +314,7 @@ i {
 }
 
 .square_3 {
-    background-color: steelblue;
+    background-color: var(--colour-6);
     padding: 1em;
     border-radius: 1em;
     height: 2em;
@@ -317,7 +328,7 @@ i {
 
 
 .square_4 {
-    background-color: steelblue;
+    background-color: var(--colour-6);
     padding: 1em;
     border-radius: 1em;
     height: 2em;
@@ -333,31 +344,31 @@ i {
 
 #top_picks button {
     border: 2px solid black;
-    border-color: #FFFF;
-    background-color: #386082;
-    color: #FFFF;
+    border-color: var(--colour-5);
+    background-color: var(--colour-2);
+    color: var(--colour-5);
     cursor: pointer;
     padding: 0.5em;
     font-size: 0.9em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-2);
     border-radius: 1vw;
     margin-left: 5em;
     margin-right: 5em;
 }
 
 #top_picks button:hover {
-    background-color: #FFFF;
-    color: #386082;
+    background-color: var(--colour-5);
+    color: var(--colour-2);
 }
 
 /* FOOTER */
 
 footer {
-    background-color: #386082;
+    background-color: var(--colour-2);
     height: auto;
     width: auto;
     padding: 4em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-2);
     position: relative;
     margin-top: 10em;
 }
@@ -368,7 +379,7 @@ footer {
 }
 
 #feedback {
-    background-color: #FFFF;
+    background-color: var(--colour-5);
     display: inline-flex;
     width: 100%;
     height: 5em;
@@ -382,7 +393,7 @@ footer {
 
 #feedback p {
     color: black;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-2);
     padding: 1em;
     font-size: 1em;
 }
@@ -406,7 +417,7 @@ footer {
 }
 
 #box {
-    background-color: #FF9632;
+    background-color: var(--colour-1);
     padding: 2em;
     border-top-left-radius: 2em;
     border-bottom-right-radius: 2em;
@@ -467,29 +478,29 @@ line {
 
 .btn {
     border: 2px solid black;
-    border-color: #FFFF;
-    background-color: #FF9632;
-    color: #FFFF;
+    border-color: var(--colour-5);
+    background-color: var(--colour-1);
+    color: var(--colour-5);
     cursor: pointer;
     padding: 1em;
     font-size: 0.9em;
 }
 
 .button_footer {
-    border-color: #FFFF;
-    color: #FFFF;
+    border-color: var(--colour-5);
+    color: var(--colour-5);
 }
 
 .button_footer:hover {
-    background-color: #FFFF;
-    color: #FF9632;
+    background-color: var(--colour-5);
+    color: var(--colour-1);
 }
 
 footer .information p {
     width: 25em;
     line-height: 0.5em;
     font-size: 0.8em;
-    color: #FFFFFF;
+    color: var(--colour-5);
 }
 
 .information {
@@ -503,7 +514,7 @@ footer .information p {
 
 #container div a {
     text-decoration: none;
-    color: #FFFF;
+    color: var(--colour-5);
     font-size: 0.8em;
     line-height: 2em;
 }
@@ -529,7 +540,7 @@ footer .information p {
     width: 1.6em;
     height: auto;
     padding: 0.5em;
-    color: #FFFFFF;
+    color: var(--colour-5);
     margin-top: 7em;
 }
 
@@ -547,7 +558,7 @@ footer .information p {
 
     .menu a {
         display: inline-flex;
-        border-bottom: 1px solid #ECEFF2;
+        border-bottom: 1px solid var(--colour-3);
         margin: 0;
     }
 
@@ -572,7 +583,7 @@ footer .information p {
 
     .menu a {
         display: block;
-        border-bottom: 1px solid lightgray;
+        border-bottom: 1px solid var(--colour-3);
         margin-left: 43em;
 
     }
