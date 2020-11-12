@@ -217,6 +217,19 @@ header {
     border-top-right-radius: 0.3em;
     border-bottom-left-radius: 0.3em;
     height: 25em;
+    position: relative;
+}
+
+#pick_1 img {
+    width: 100%;
+    height: 30em;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-top-right-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
 }
 
 #pick_2 {
@@ -227,6 +240,19 @@ header {
     border-top-right-radius: 0.3em;
     border-bottom-left-radius: 0.3em;
     height: 25em;
+    position: relative;
+}
+
+#pick_2 img {
+    width: 100%;
+    height: 30em;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-top-right-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
 }
 
 #pick_3 {
