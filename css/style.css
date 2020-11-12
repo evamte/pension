@@ -177,6 +177,121 @@ header {
     z-index: -1;
 }
 
+/* YOUR SITUATION */
+
+#situation {
+    background-color: white;
+    padding: 2em;
+    margin: 2em;
+    border-radius: 2em;
+}
+
+#situation h1 {
+    font-family: var(--font-2);
+    font-size: 2.7em;
+    margin-left: 5vw;
+    margin-bottom: 0em;
+    color: var(--colour-2);
+    text-align: center;
+}
+
+#situation p {
+    font-family: var(--font-2);
+    font-size: 1em;
+    margin-left: 5vw;
+    margin-bottom: 0em;
+    color: var(--colour-2);
+    text-align: center;
+    padding-left: 10em;
+    padding-right: 10em;
+    line-height: 1.5em;
+}
+
+#list_situations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-gap: 2vw;
+    margin: 2vw;
+    padding: 2vw;
+    margin-top: 0em;
+}
+
+#retirement {
+    border-color: var(--colour-2);
+    padding: 1em;
+    display: flex;
+}
+
+#retirement h2 {
+    font-family: var(--font-2);
+    font-size: 1.2em;
+}
+
+#married {
+    border-color: var(--colour-2);
+    padding: 1em;
+    display: flex;
+}
+
+#married h2 {
+    font-family: var(--font-2);
+    font-size: 1.2em;
+}
+
+#home {
+    border-color: var(--colour-2);
+    padding: 1em;
+    display: flex;
+}
+
+#home h2 {
+    font-family: var(--font-2);
+    font-size: 1.2em;
+}
+
+#expecting {
+    border-color: var(--colour-2);
+    padding: 1em;
+    display: flex;
+}
+
+#expecting h2 {
+    font-family: var(--font-2);
+    font-size: 1.2em;
+}
+
+#family {
+    border-color: var(--colour-2);
+    padding: 1em;
+    display: flex;
+}
+
+#family h2 {
+    font-family: var(--font-2);
+    font-size: 1.2em;
+}
+
+#health {
+    border-color: var(--colour-2);
+    padding: 1em;
+    display: flex;
+}
+
+#health h2 {
+    font-family: var(--font-2);
+    font-size: 1.2em;
+}
+
+.tick {
+    border: 1px solid;
+    border-color: var(--colour-2);
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
 /* TOP PICKS */
 
 #columns_top_picks {
@@ -551,7 +666,6 @@ footer .information p {
         margin: 0;
     }
 
-
 }
 
 @media only screen and (max-width: 500px) {
@@ -608,6 +722,11 @@ footer .information p {
     .description {
         font-size: 1.5em;
         text-align: left;
+    }
+
+    #situation p {
+        padding-left: 0em;
+        padding-right: 0em;
     }
 
     footer {
