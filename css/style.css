@@ -292,6 +292,109 @@ header {
     margin-top: 1em;
 }
 
+/* INFORMATION */
+
+#information {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-gap: 4vw;
+    margin: 2vw;
+    padding: 2vw;
+    margin-top: 8em;
+    background-color: #FFFF;
+}
+
+#info_left h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    line-height: 2.5em;
+    border-bottom: 2px solid #ECEFF2;
+}
+
+.info_retirement h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+}
+
+.info_retirement h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+}
+
+.info_retirement p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+}
+
+.info_retirement h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    margin-top: 2.5em;
+}
+
+.help {
+    display: flex;
+}
+
+.call_us h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.call_us p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    margin-top: 1em;
+    color: #386082;
+}
+
+.info_retirement h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.email_us h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.email_us a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #386082;
+    font-size: 1em;
+}
+
+.info_retirement button {
+    border: none;
+    background-color: #FF9632;
+    color: #FFFF;
+    cursor: pointer;
+    padding-left: 17.5em;
+    padding-right: 17.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 0.9em;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 1em;
+}
+
+.info_retirement button:hover {
+    opacity: 90%;
+}
+
+#info_right {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+
+
 /* TOP PICKS */
 
 #columns_top_picks {
@@ -601,14 +704,14 @@ line {
     color: #FF9632;
 }
 
-footer .information p {
+footer .address p {
     width: 25em;
     line-height: 0.5em;
     font-size: 0.8em;
     color: #FFFFFF;
 }
 
-.information {
+.address {
     margin-top: -6em;
 }
 
@@ -739,7 +842,7 @@ footer .information p {
         margin-bottom: 1.5em;
     }
 
-    .information p {
+    .address p {
         font-size: 0.8em;
     }
 
