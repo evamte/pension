@@ -314,39 +314,39 @@ header {
     margin: 2vw;
     padding: 2vw;
     margin-top: 8em;
-    background-color: #FFFF;
+    background-color: var(--colour-5);
 }
 
 #info_left h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-2);
     font-size: 1.2em;
     line-height: 2.5em;
-    border-bottom: 2px solid #ECEFF2;
+    border-bottom: 2px solid var(--colour-3);
 }
 
 #info_left .selected {
-    color: #386082;
-    background-color: #ECEFF2;
+    color: var(--colour-2);
+    background-color: var(--colour-3);
     padding-left: 1em;
 }
 
 .info_retirement h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-2);
     font-size: 1.8em;
 }
 
 .info_retirement h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-2);
     font-size: 0.9em;
 }
 
 .info_retirement p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-2);
     font-size: 0.9em;
 }
 
 .info_retirement h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-2);
     font-size: 1.1em;
     margin-top: 2.5em;
 }
@@ -356,50 +356,50 @@ header {
 }
 
 .call_us h4 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-2);
     font-size: 0.9em;
     margin: 0;
 }
 
 .call_us p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-2);
     font-size: 1em;
     margin-top: 1em;
-    color: #386082;
+    color: var(--colour-2);
 }
 
 .info_retirement h5 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-2);
     font-size: 0.8em;
     margin-left: 3em;
     margin-right: 3em;
 }
 
 .email_us h4 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-2);
     font-size: 0.9em;
     margin: 0;
     margin-bottom: 1em;
 }
 
 .email_us a {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-2);
     text-decoration: none;
-    color: #386082;
+    color: var(--colour-2);
     font-size: 1em;
 }
 
 .info_retirement button {
     border: none;
-    background-color: #FF9632;
-    color: #FFFF;
+    background-color: var(--colour-1);
+    color: var(--colour-5);
     cursor: pointer;
     padding-left: 17.5em;
     padding-right: 17.5em;
     padding-top: 1em;
     padding-bottom: 1em;
     font-size: 0.9em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-2);
     border-radius: 1em;
 }
 
