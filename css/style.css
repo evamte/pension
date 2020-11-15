@@ -112,11 +112,11 @@ label {
 }
 
 #toggle:checked + .menu {
-        display: inline-block;
-        margin: 0;
+    display: inline-block;
+    margin: 0;
     margin-left: -42.2em;
     width: 84.35em;
-    }
+}
 
 
 .logo {
@@ -527,15 +527,15 @@ i {
 }
 
 .arrow {
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
 }
 
 .right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
 }
 
 .square_1 {
@@ -876,6 +876,11 @@ footer .address p {
         padding-right: 0em;
     }
 
+    .info_retirement button {
+        padding-left: 12.5em;
+        padding-right: 12.5em;
+    }
+
     footer {
         padding: 1em;
         height: 145vw;
@@ -887,16 +892,10 @@ footer .address p {
         margin-top: -3em;
     }
 
-<<<<<<< HEAD
-    .information {
+    .address {
+        margin-top: -35em;
         font-size: 0.9em;
-        margin-top: -32em;
-=======
-    .address p {
-        font-size: 0.8em;
->>>>>>> information
     }
-
 
     #container {
         display: grid;
@@ -909,7 +908,7 @@ footer .address p {
 
     #box {
         margin-left: 16em;
-        margin-top: 7em;
+        margin-top: 11em;
         width: 7em;
     }
 
@@ -929,7 +928,8 @@ footer .address p {
         font-size: 0.8em;
     }
 
-    .btn, .button_footer {
+    .btn,
+    .button_footer {
         margin-top: 1em;
     }
 
