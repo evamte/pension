@@ -311,6 +311,12 @@ header {
     border-bottom: 2px solid #ECEFF2;
 }
 
+#info_left .selected {
+    color: #386082;
+    background-color: #ECEFF2;
+    padding-left: 1em;
+}
+
 .info_retirement h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.8em;
