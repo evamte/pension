@@ -649,16 +649,20 @@ footer .information p {
 
     footer {
         padding: 1em;
+        height: 145vw;
     }
 
     .column {
-        font-size: 0.8em;
-        margin-bottom: 1.5em;
+        font-size: 0.9em;
+        margin-bottom: 5.5em;
+        margin-top: -3em;
     }
 
-    .information p {
-        font-size: 0.8em;
+    .information {
+        font-size: 0.9em;
+        margin-top: -32em;
     }
+
 
     #container {
         display: grid;
@@ -666,15 +670,17 @@ footer .information p {
     }
 
     #feedback {
-        margin-left: -3em;
+        margin-top: -3em;
     }
 
     #box {
-        margin-left: -2em;
+        margin-left: 16em;
+        margin-top: 7em;
+        width: 7em;
     }
 
     line {
-        transform: rotate(180deg);
+        display: none;
     }
 
     #inside_box {
@@ -687,5 +693,13 @@ footer .information p {
 
     .btn_footer {
         font-size: 0.8em;
+    }
+
+    .btn, .button_footer {
+        margin-top: 1em;
+    }
+
+    #social_media_icons {
+        margin-top: -8em;
     }
 }
