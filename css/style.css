@@ -55,8 +55,8 @@ body {
 .menubar ul {
     list-style-type: none;
     margin-top: 1.7em;
-    margin-left: 97em;
     display: flex;
+    margin-left: 22em;
 }
 
 .menubar li {
@@ -71,16 +71,14 @@ body {
 .nav {
     text-align: right;
     float: right;
-    height: 100px;
+    height: 10px;
     line-height: 5em;
-    width: 37em;
 }
 
 .menu {
     margin: 0;
     background-color: var(--colour-5);
     text-align: center;
-    width: 100%;
     display: none;
 }
 
@@ -88,10 +86,14 @@ body {
     text-decoration: none;
     color: gray;
     margin: 0;
-    clear: right;
+    line-height: 70px;
     font-family: var(--font-2);
     font-size: 1.5em;
     padding-right: 1.5em;
+    clear: right;
+    display: inline-flex;
+    border-bottom: 1px solid var(--colour-3);
+    margin: 0;
 }
 
 .menu a:hover {
@@ -107,11 +109,14 @@ span:hover {
 }
 
 label {
-    margin: 0;
+    margin: 0 40px 0 0;
     font-size: 2.5em;
     line-height: 2.5em;
     display: none;
-    margin-left: 20em;
+    width: 56px;
+    float: right;
+    display: block;
+    cursor: pointer;
 }
 
 #toggle {
@@ -319,8 +324,8 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     grid-gap: 0em;
-    margin: 5em;
-    padding: 2vw;
+    margin: 2em;
+    padding: 3vw;
     margin-top: 0em;
     margin-bottom: 0em;
     background-color: var(--colour-5);
@@ -333,13 +338,11 @@ section {
     font-family: var(--font-2);
     font-size: 1.5em;
     line-height: 2.5em;
-    width: 20em;
+    margin-right: 10em;
     border-bottom: 2px solid var(--colour-3);
+    grid-column: 1 / -1;
 }
 
-.info_right {
-    margin-left: -10em;
-}
 
 .info_right img {
     margin-left: 45em;
@@ -351,14 +354,12 @@ section {
 .info_right h2 {
     font-family: var(--font-2);
     font-size: 2.5em;
-    width: 40em;
 }
 
 .info_right h3 {
     font-family: var(--font-2);
     font-size: 1.4em;
     line-height: 1.5em;
-    width: 40em;
 }
 
 .info_right h4 {
@@ -366,7 +367,6 @@ section {
     font-family: var(--font-2);
     font-size: 1.6em;
     margin-top: 2.5em;
-    width: 40em;
 
 }
 
@@ -374,7 +374,6 @@ section {
     font-family: var(--font-2);
     font-size: 1.3em;
     line-height: 1.5em;
-    width: 40em;
 }
 
 .help {
@@ -384,7 +383,7 @@ section {
 .help h5 {
     font-family: var(--font-2);
     font-size: 1.2em;
-    margin-left: -39em;
+    margin-left: 3em;
     margin-right: 3em;
 }
 
@@ -397,7 +396,7 @@ section {
 
 .call_us a {
     font-family: var(--font-2);
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: var(--colour-2);
 }
 
@@ -411,7 +410,7 @@ section {
 .email_us a {
     font-family: var(--font-2);
     color: var(--colour-2);
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .info_right button {
@@ -419,24 +418,18 @@ section {
     background-color: var(--colour-1);
     color: var(--colour-5);
     cursor: pointer;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
     padding-top: 1em;
     padding-bottom: 1em;
-    width: 35em;
     font-size: 1.5em;
     font-family: var(--font-2);
     border-radius: 1em;
-    margin-top: 4em;
+    margin-top: 3em;
 }
 
 .info_right button:hover {
     opacity: 90%;
-}
-
-.info_right {
-    margin-top: 2em;
-    margin-bottom: 2em;
 }
 
 
@@ -799,8 +792,10 @@ footer .address p {
 }
 
 #container {
-    margin-top: 7em;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-gap: 4em;
+    margin-top: 8em;
 }
 
 #container div a {
@@ -810,16 +805,9 @@ footer .address p {
     line-height: 2em;
 }
 
-#container:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 .column {
-    float: left;
-    width: 33.33%;
     display: grid;
+    width: 30em;
 }
 
 #container .column a:hover {
@@ -841,35 +829,12 @@ footer .address p {
 
 /* media queries */
 
-@media only screen and (min-width: 900px) {
-    label {
-        display: block;
-        cursor: pointer;
-    }
-
-    .menu a {
-        display: inline-flex;
-        border-bottom: 1px solid var(--colour-3);
-        margin: 0;
-    }
-
-}
 
 @media only screen and (max-width: 500px) {
 
-    /* MENUBAR */
-
-    .akademiker_pension a {
-        font-size: 0.8em;
-    }
-
     label {
         display: block;
         cursor: pointer;
-        position: absolute;
-        left: -6.5em;
-        font-size: 1.5em;
-        margin-top: -2.5em;
     }
 
     .menu {
@@ -879,18 +844,13 @@ footer .address p {
     }
 
     .menu a {
-        font-size: 1em;
         display: block;
         border-bottom: 1px solid var(--colour-3);
-        margin-left: 61em;
-        line-height: 4em;
+        margin: 0;
     }
 
     #toggle:checked + .menu {
         display: block;
-        width: 82.5em;
-        padding-right: 0.7em;
-        position: absolute;
     }
 
     .logo {
@@ -928,189 +888,5 @@ footer .address p {
         height: 1.7em;
     }
 
-    /* HEADER */
 
-    .title {
-        font-size: 2.5em;
-        text-align: left;
-        margin-top: -7em;
-    }
-
-    .description {
-        font-size: 1.2em;
-        text-align: left;
-        padding: 1em;
-    }
-
-    #situation p {
-        padding-left: 0em;
-        padding-right: 0em;
-    }
-
-    .info_retirement button {
-        padding-left: 12.5em;
-        padding-right: 12.5em;
-    }
-
-    /* TOP PICKS */
-
-    #top_picks h1 {
-        font-size: 2em;
-        margin-bottom: 0.5em;
-    }
-
-    #pick_1 {
-        height: 25em;
-    }
-
-    #pick_1 img {
-        height: 30em;
-    }
-
-    #pick_2 {
-        height: 25em;
-    }
-
-    #pick_2 img {
-        height: 30em;
-    }
-
-    #pick_3 {
-        height: 25em;
-    }
-
-    #pick_3 img {
-        height: 30em;
-    }
-
-    #top_picks h2 {
-        font-size: 1.1em;
-    }
-
-    #top_picks h3 {
-        font-size: 0.9em;
-    }
-
-    #top_picks h5 {
-        font-size: 0.7em;
-    }
-
-    #top_picks h4 {
-        font-size: 0.9em;
-        margin-top: 0.5em;
-    }
-
-    i {
-        top: 1.8em;
-        left: 16em;
-    }
-
-    .arrow {
-        border-width: 0 3px 3px 0;
-    }
-
-    .square_1 {
-        height: 2em;
-        margin-bottom: 0.5em;
-    }
-
-    .square_2 {
-        height: 2em;
-        margin-bottom: 0.5em;
-    }
-
-    .square_3 {
-        height: 2em;
-        margin-bottom: 0.5em;
-    }
-
-    #top_picks button {
-        font-size: 1.2em;
-        margin-left: 1em;
-        margin-right: 1em;
-    }
-
-    /* FOOTER */
-
-    footer {
-        padding: 1em;
-        height: 235vw;
-    }
-
-    .column {
-        font-size: 0.9em;
-        margin-bottom: 5.5em;
-        margin-top: -3em;
-    }
-
-    .address {
-        margin-top: -55em;
-        font-size: 0.7em;
-    }
-
-    #container {
-        display: grid;
-        width: 100%;
-        font-size: 0.8em;
-    }
-
-    #feedback {
-        margin-top: -3em;
-        width: 22em;
-        height: 5em;
-    }
-
-    #feedback p {
-        font-size: 0.9em;
-        width: 100em;
-    }
-
-    .thumbs_up img {
-        width: 1.5em;
-        margin-right: 0.5em;
-        margin-top: 0.8em;
-    }
-
-    .thumbs_down img {
-        width: 1.5em;
-        margin-top: 0.8em;
-        margin-right: 1em;
-    }
-
-    #box {
-        margin-left: 10em;
-        margin-top: 9em;
-        width: 8em;
-    }
-
-    line {
-        display: none;
-    }
-
-
-    #inside_box {
-        display: grid;
-    }
-
-    .schedule {
-        font-size: 0.7em;
-    }
-
-    .btn_footer {
-        font-size: 0.8em;
-    }
-
-    .btn,
-    .button_footer {
-        margin-top: 1em;
-    }
-
-    #social_media_icons {
-        margin-top: -4em;
-    }
-
-    #social_media_icons img {
-        width: 2.5em;
-        padding: 1em;
-    }
 }
