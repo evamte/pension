@@ -317,42 +317,46 @@ header {
     background-color: var(--colour-5);
 }
 
-#info_left h1 {
+.info_left h2 {
+    color: var(--colour-2);
+    background-color: var(--colour-3);
+    padding-left: 1em;
     font-family: var(--font-2);
     font-size: 1.2em;
     line-height: 2.5em;
     border-bottom: 2px solid var(--colour-3);
 }
 
-#info_left .selected {
-    color: var(--colour-2);
-    background-color: var(--colour-3);
-    padding-left: 1em;
-}
-
-.info_retirement h1 {
+.info_right h2 {
     font-family: var(--font-2);
     font-size: 1.8em;
 }
 
-.info_retirement h2 {
+.info_right h3 {
     font-family: var(--font-2);
     font-size: 0.9em;
 }
 
-.info_retirement p {
-    font-family: var(--font-2);
-    font-size: 0.9em;
-}
-
-.info_retirement h3 {
+.info_right h4 {
+    display: flex;
     font-family: var(--font-2);
     font-size: 1.1em;
     margin-top: 2.5em;
 }
 
+.info_right p {
+    font-family: var(--font-2);
+    font-size: 0.9em;
+}
+
 .help {
     display: flex;
+}
+
+.help h5 {
+    font-family: var(--font-2);
+    font-size: 0.8em;
+    margin: 0;
 }
 
 .call_us h4 {
@@ -361,19 +365,19 @@ header {
     margin: 0;
 }
 
-.call_us p {
+.call_us a {
     font-family: var(--font-2);
     font-size: 1em;
     margin-top: 1em;
     color: var(--colour-2);
 }
 
-.info_retirement h5 {
+/*.info_right h5 {
     font-family: var(--font-2);
     font-size: 0.8em;
     margin-left: 3em;
     margin-right: 3em;
-}
+}*/
 
 .email_us h4 {
     font-family: var(--font-2);
@@ -389,7 +393,7 @@ header {
     font-size: 1em;
 }
 
-.info_retirement button {
+.info_right button {
     border: none;
     background-color: var(--colour-1);
     color: var(--colour-5);
@@ -403,11 +407,11 @@ header {
     border-radius: 1em;
 }
 
-.info_retirement button:hover {
+.info_right button:hover {
     opacity: 90%;
 }
 
-#info_right {
+.info_right {
     margin-top: 2em;
     margin-bottom: 2em;
 }
