@@ -19,10 +19,15 @@ function showSituation(life_situation) {
     const copy = template.cloneNode(true);
     console.log(template)
 
-    copy.querySelector("#info_left .selected").innerHTML = life_situation.title.rendered;
-    //copy.querySelector("#info_right").innerHTML = life_situation.short_description;
-    //copy.querySelector(".call_us").textContent = life_situation.phone;
-    //copy.querySelector(".email_us").textContent = life_situation.e-mail;
+    copy.querySelector(".info_left h2").textContent = life_situation.title.rendered;
+
+    //console.log(life_situation.title.rendered)
+    copy.querySelector("img").src = life_situation.icon.guid;
+    copy.querySelector(".info_right h2").textContent = life_situation.title.rendered;
+    copy.querySelector(".info_right h3").textContent = life_situation.short_description;
+    copy.querySelector(".info_right p").textContent = life_situation.long_description;
+    copy.querySelector(".call_us a").textContent = life_situation.phone;
+    copy.querySelector(".email_us a").textContent = life_situation.email;
 
     document.querySelector("main").appendChild(copy);
 }
