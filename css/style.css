@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -255,13 +256,15 @@ header {
     width: 28em;
 }
 
+.align {
+    text-align: center;
+}
+
 #retirement img {
     width: 100%;
-    max-width: 9em;
+    max-width: 8em;
     height: auto;
     margin-top: 1.5em;
-    margin-left: 7.5em;
-    margin-right: 7.5em;
 }
 
 #retirement h2 {
@@ -280,11 +283,9 @@ header {
 
 #married img {
     width: 100%;
-    max-width: 9em;
+    max-width: 7.5em;
     height: auto;
     margin-top: 1.5em;
-    margin-left: 7.5em;
-    margin-right: 7.5em;
 }
 
 #married h2 {
@@ -303,11 +304,9 @@ header {
 
 #job img {
     width: 100%;
-    max-width: 11em;
+    max-width: 9.5em;
     height: auto;
     margin-top: 1.5em;
-    margin-left: 7.5em;
-    margin-right: 7.5em;
 }
 
 #job h2 {
@@ -326,11 +325,9 @@ header {
 
 #divorce img {
     width: 100%;
-    max-width: 10em;
+    max-width: 9em;
     height: auto;
     margin-top: 1.5em;
-    margin-left: 7.5em;
-    margin-right: 7.5em;
 }
 
 #divorce h2 {
@@ -349,11 +346,9 @@ header {
 
 #new img {
     width: 100%;
-    max-width: 11em;
+    max-width: 10.5em;
     height: auto;
     margin-top: 1.5em;
-    margin-left: 7em;
-    margin-right: 7em;
 }
 
 #new h2 {
@@ -372,11 +367,9 @@ header {
 
 #health img {
     width: 100%;
-    max-width: 10em;
+    max-width: 9em;
     height: auto;
     margin-top: 1.5em;
-    margin-left: 7.5em;
-    margin-right: 7.5em;
 }
 
 #health h2 {
@@ -395,11 +388,9 @@ header {
 
 #expecting img {
     width: 100%;
-    max-width: 11em;
+    max-width: 10.5em;
     height: auto;
     margin-top: 1.5em;
-    margin-left: 6em;
-    margin-right: 6em;
 }
 
 #expecting h2 {
@@ -418,11 +409,9 @@ header {
 
 #home img {
     width: 100%;
-    max-width: 12em;
+    max-width: 12.5em;
     height: auto;
     margin-top: 1.5em;
-    margin-left: 6em;
-    margin-right: 6em;
 }
 
 #home h2 {
@@ -441,11 +430,9 @@ header {
 
 #student img {
     width: 100%;
-    max-width: 10em;
+    max-width: 9em;
     height: auto;
     margin-top: 1.5em;
-    margin-left: 7.5em;
-    margin-right: 7.5em;
 }
 
 #student h2 {
@@ -478,7 +465,7 @@ header {
     background-color: var(--colour-5);
     border: 1px solid var(--colour-2);
     position: absolute;
-    left: 1.5em;
+    left: 1.8em;
     top: -0.5em;
     border-radius: 1em;
 }
@@ -511,8 +498,8 @@ header {
     color: var(--colour-5);
     cursor: pointer;
     padding: 1em;
-    padding-right: 10em;
-    padding-left: 10em;
+    padding-right: 7em;
+    padding-left: 7em;
     font-size: 1.6em;
     border-radius: 1em;
     margin-bottom: 2.5em;
@@ -919,8 +906,10 @@ footer {
     border-top-left-radius: 2em;
     border-bottom-right-radius: 2em;
     width: 100%;
-    margin-top: -8em;
-    margin-left: 73em;
+    max-width: 45em;
+    top: -4em;
+    left: 72em;
+    position: absolute;
 }
 
 #box h3 {
@@ -966,8 +955,8 @@ line {
     border: black;
     height: 0.1em;
     background-color: black;
-    width: 2.9em;
-    margin-left: -1.7em;
+    width: 4em;
+    margin-left: -2.5em;
     margin-top: 0.5em;
     opacity: 50%;
 }
@@ -984,6 +973,8 @@ line {
     cursor: pointer;
     padding: 1em;
     font-size: 1.2em;
+    margin-right: 3em;
+    margin-top: 1.5em;
 }
 
 .button_footer {
@@ -1004,7 +995,7 @@ footer .address p {
 }
 
 .address {
-    margin-top: -6em;
+    margin-top: 8em;
 }
 
 #container {
@@ -1045,8 +1036,9 @@ footer .address p {
 
 /* media queries */
 
+@media only screen and (max-width: 768px) {
 
-@media only screen and (max-width: 500px) {
+    /*MENUBAR*/
 
     label {
         display: block;
@@ -1057,12 +1049,15 @@ footer .address p {
         text-align: left;
         width: 100%;
         display: none;
+        max-width: 80em;
     }
 
     .menu a {
         display: block;
         border-bottom: 1px solid var(--colour-3);
         margin: 0;
+        margin-left: 26.5em;
+        padding-right: 1em;
     }
 
     #toggle:checked + .menu {
@@ -1072,36 +1067,83 @@ footer .address p {
     .logo {
         width: 100%;
         height: auto;
-        max-width: 8em;
+        max-width: 16em;
         margin-left: -0.5em;
         margin-top: 0.4em;
     }
 
     .menubar {
-        height: 4em;
-    }
-
-    .menubar ul {
-        margin-left: 10em;
-        margin-top: 1em;
+        height: 6em;
     }
 
     .menubar li {
-        margin-right: 0.8em;
+        margin-right: 0.3em;
+    }
+
+    .menu_icons {
+        left: 21em;
     }
 
     .search {
-        max-width: 1.5em;
+        max-width: 2.5em;
+        height: 2.5em;
     }
 
     .contact {
-        max-width: 1.7em;
-        height: 1.7em;
+        max-width: 2.5em;
+        height: 2.5em;
     }
 
     .lock {
-        max-width: 1.7em;
-        height: 1.7em;
+        max-width: 2.5em;
+        height: 2.5em;
     }
 
+    /*FOOTER*/
+
+    #box {
+        background-color: var(--colour-1);
+        padding: 2em;
+        border-top-left-radius: 2em;
+        border-bottom-right-radius: 2em;
+        width: 100%;
+        top: 54em;
+        left: 8em;
+        width: 25em;
+        text-align: center;
+    }
+
+    #inside_box {
+        display: grid;
+        margin-top: 3em;
+    }
+
+    .schedule p {
+        text-align: center;
+        padding-right: 0em;
+        width: 23em;
+    }
+
+    line {
+        display: none;
+    }
+
+    .btn_footer {
+        display: grid;
+
+    }
+
+    .btn {
+        margin-bottom: 0.5em;
+        margin-right: 0em;
+    }
+
+    .address {
+        margin-top: 7em;
+    }
+
+    #social_media_icons {
+        margin-top: 42em;
+        text-align: center;
+    }
 }
