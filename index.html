@@ -94,7 +94,7 @@
                 <img src="img/new.png" alt="new icon">
             </div>
 
-             <div id="health">
+            <div id="health">
                 <label class="checkbox_container">
                     <input type="checkbox">
                     <span class="checkmark"></span>
@@ -128,18 +128,27 @@
             </div>
         </div>
         <div class="btn_container">
-        <button>Get and overview</button>
-            </div>
+            <button>Get and overview</button>
+        </div>
     </div>
 
     <main>
-        <template id="information">
-            <section>
-                <div class="info_left">
-                    <h2>Title</h2>
-                </div>
-
-                <div class="info_right">
+        <div id="information">
+            <div id="info_left">
+                <ul>
+                    <li id="situation_1_tab" onclick="showText(this.id)">I am approaching retirement</li>
+                    <li id="situation_2_tab" onclick="showText(this.id)">I am getting married</li>
+                    <li id="situation_3_tab" onclick="showText(this.id)">I am leaving or changing my job</li>
+                    <li id="situation_4_tab" onclick="showText(this.id)">I am getting divorced</li>
+                    <li id="situation_5_tab" onclick="showText(this.id)">I am new to Akademiker Pension</li>
+                    <li id="situation_6_tab" onclick="showText(this.id)">I have health issues</li>
+                    <li id="situation_7_tab" onclick="showText(this.id)">I have children or am expecting</li>
+                    <li id="situation_8_tab" onclick="showText(this.id)">I am buying a home</li>
+                    <li id="situation_9_tab" onclick="showText(this.id)">I am a student</li>
+                </ul>
+            </div>
+            <template>
+                <div id="info_right">
                     <img src="">
                     <h2>Title</h2>
                     <h3>Short Description</h3>
@@ -158,8 +167,8 @@
                     </div>
                     <button>Learn More</button>
                 </div>
-            </section>
-        </template>
+            </template>
+        </div>
     </main>
 
     <div id="top_picks">
