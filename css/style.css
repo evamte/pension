@@ -530,7 +530,7 @@ header {
 
 /* INFORMATION */
 
-section {
+main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     grid-gap: 0em;
@@ -541,38 +541,44 @@ section {
     background-color: var(--colour-5);
 }
 
-.info_left h2 {
+#info_left {
     color: var(--colour-2);
     background-color: var(--colour-3);
-    padding-left: 1em;
     font-family: var(--font-2);
-    font-size: 1.5em;
-    line-height: 2.5em;
-    margin-right: 10em;
+    font-size: 1.2em;
+    line-height: 2.3em;
     border-bottom: 2px solid var(--colour-3);
     grid-column: 1 / -1;
 }
 
+#info_left > ul {
+    list-style-type: none;
+}
 
-.info_right img {
+ul > li {
+    cursor: pointer;
+    padding: 1em;
+}
+
+#info_right img {
     margin-left: 45em;
     position: absolute;
     width: 5em;
     height: auto;
 }
 
-.info_right h2 {
+#info_right h2 {
     font-family: var(--font-2);
     font-size: 2.5em;
 }
 
-.info_right h3 {
+#info_right h3 {
     font-family: var(--font-2);
     font-size: 1.4em;
     line-height: 1.5em;
 }
 
-.info_right h4 {
+#info_right h4 {
     display: flex;
     font-family: var(--font-2);
     font-size: 1.6em;
@@ -580,7 +586,7 @@ section {
 
 }
 
-.info_right p {
+#info_right p {
     font-family: var(--font-2);
     font-size: 1.3em;
     line-height: 1.5em;
@@ -623,7 +629,7 @@ section {
     font-size: 1.2em;
 }
 
-.info_right button {
+#info_right button {
     border: none;
     background-color: var(--colour-1);
     color: var(--colour-5);
@@ -638,7 +644,7 @@ section {
     margin-top: 3em;
 }
 
-.info_right button:hover {
+#info_right button:hover {
     opacity: 90%;
 }
 
