@@ -1,7 +1,24 @@
-window.addEventListener('DOMContentLoaded', getData);
+window.addEventListener('DOMContentLoaded', init);
 
+let myData = {};
+
+function init() {
+
+    document.querySelector("#situation_1_tab").addEventListener("click", displayData);
+    document.querySelector("#situation_2_tab").addEventListener("click", displayData);
+    document.querySelector("#situation_3_tab").addEventListener("click", displayData);
+    document.querySelector("#situation_4_tab").addEventListener("click", displayData);
+    document.querySelector("#situation_5_tab").addEventListener("click", displayData);
+    document.querySelector("#situation_6_tab").addEventListener("click", displayData);
+    document.querySelector("#situation_7_tab").addEventListener("click", displayData);
+    document.querySelector("#situation_8_tab").addEventListener("click", displayData);
+    document.querySelector("#situation_9_tab").addEventListener("click", displayData);
+
+    getData();
+}
 
 function getData() {
+<<<<<<< HEAD
     let life_situation = fetch("http://createsimple.dk/ap_data/wordpress/wp-json/wp/v2/life_situation")
         .then(response => response.json())
         //.then(showText);
@@ -104,51 +121,46 @@ var buttonIdToTabId = {
     situation_7_button: "situation_7_tab",
     situation_8_button: "situation_8_tab",
     situation_9_button: "situation_9_tab",
+=======
+    fetch('http://createsimple.dk/ap_data/wordpress/wp-json/wp/v2/life_situation')
+        .then(response => response.json())
+        .then(data => {
+            myData = data;
+            displayData();
+        });
+}
+
+function displayData(event) {
+
+    if (event !== undefined) {
+        console.dir(event.target.dataset.situation_list);
+        let targetStringNumber = event.target.dataset.situation_list;
+        let targetIntNumber = parseInt(targetStringNumber)
+
+        showText(myData[targetIntNumber]);
+>>>>>>> situation_display
+
+    } else {
+        showText(myData[0]); // DEFAULT 1. TIME
+    }
 
 }
 
-var buttonClickedStates = {
-    situation_1_button: false,
-    situation_2_button: false,
-    situation_3_button: false,
-    situation_4_button: false,
-    situation_5_button: false,
-    situation_6_button: false,
-    situation_7_button: false,
-    situation_8_button: false,
-    situation_9_button: false,
-}
 
-var tabToText = {
-    situation_1_tab: 'lifeSituation',
-    situation_2_tab: 'lifeSituation2',
-    situation_3_tab: 'lifeSituation3',
-    situation_4_tab: 'lifeSituation4',
-    situation_5_tab: 'lifeSituation5',
-    situation_6_tab: 'lifeSituation6',
-    situation_7_tab: 'lifeSituation7',
-    situation_8_tab: 'lifeSituation8',
-    situation_9_tab: 'lifeSituation9',
-}
+function showText(singleDataObj) {
 
-window.onload = function () {
-    document.getElementById('info_right').innerHTML = tabToText.situation_1_tab;
-};
+    document.querySelector("#info_right").innerHTML = "";
+    const template = document.querySelector("#template").content;
 
-function showText(tabId) {
-
-    const template = document.querySelector("template").content;
     const copy = template.cloneNode(true);
 
-    copy.querySelector("img").src = allData.lifeSituation.img_src;
-    copy.querySelector("#info_right h2").textContent = allData.lifeSituation.info_right_h2;
-    copy.querySelector("#info_right h3").textContent = allData.lifeSituation.info_right_h3;
-    copy.querySelector("#info_right p").textContent = allData.lifeSituation.info_right_p;
-    copy.querySelector(".call_us a").textContent = allData.lifeSituation.call_us_a;
-    copy.querySelector(".email_us a").textContent = allData.lifeSituation.email_us_a;
+    copy.querySelector("img").src = singleDataObj.icon.guid;
+    copy.querySelector("h2").textContent = singleDataObj.title.rendered;
+    copy.querySelector("h3").textContent = singleDataObj.short_description;
+    copy.querySelector("p").textContent = singleDataObj.long_description;
+    copy.querySelector(".call_us a").textContent = singleDataObj.phone;
+    copy.querySelector(".email_us a").textContent = singleDataObj.email;
 
-    document.getElementById('info_right').innerHTML = tabToText[lifeSituation];
-
-    document.querySelector("main").appendChild(copy);
+    document.querySelector("#info_right").appendChild(copy);
 }
 */
