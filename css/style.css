@@ -246,213 +246,29 @@ header {
     padding: 0vw;
 }
 
-#retirement {
+#list_situations > div img {
+    width: auto;
+    max-width: 6em;
+    margin-left: 6em;
+    margin-right: 6em;
+}
+
+#list_situations > div h2 {
+    font-family: var(--font-2);
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#list_situations > div {
     border: solid 3px var(--colour-2);
     border-radius: 1em;
     padding: 2.5em;
-    margin: 0em;
     display: block;
-    width: 28em;
-}
+    width: 18em;
+    height: 18em;
 
-#retirement img {
-    width: 100%;
-    max-width: 9em;
-    height: auto;
-    margin-top: 1.5em;
-    margin-left: 7.5em;
-    margin-right: 7.5em;
-}
-
-#retirement h2 {
-    font-family: var(--font-2);
-    font-size: 1.5em;
-    text-align: center;
-    margin-top: 2em;
-}
-
-#married {
-    border: solid 3px var(--colour-2);
-    border-radius: 1em;
-    padding: 2.5em;
-    width: 28em;
-}
-
-#married img {
-    width: 100%;
-    max-width: 9em;
-    height: auto;
-    margin-top: 1.5em;
-    margin-left: 7.5em;
-    margin-right: 7.5em;
-}
-
-#married h2 {
-    font-family: var(--font-2);
-    font-size: 1.5em;
-    text-align: center;
-    margin-top: 2em;
-}
-
-#job {
-    border: solid 3px var(--colour-2);
-    border-radius: 1em;
-    padding: 2.5em;
-    width: 28em;
-}
-
-#job img {
-    width: 100%;
-    max-width: 11em;
-    height: auto;
-    margin-top: 1.5em;
-    margin-left: 7.5em;
-    margin-right: 7.5em;
-}
-
-#job h2 {
-    font-family: var(--font-2);
-    font-size: 1.5em;
-    text-align: center;
-    margin-top: 2em;
-}
-
-#divorce {
-    border: solid 3px var(--colour-2);
-    border-radius: 1em;
-    padding: 2.5em;
-    width: 28em;
-}
-
-#divorce img {
-    width: 100%;
-    max-width: 10em;
-    height: auto;
-    margin-top: 1.5em;
-    margin-left: 7.5em;
-    margin-right: 7.5em;
-}
-
-#divorce h2 {
-    font-family: var(--font-2);
-    font-size: 1.5em;
-    text-align: center;
-    margin-top: 2em;
-}
-
-#new {
-    border: solid 3px var(--colour-2);
-    border-radius: 1em;
-    padding: 2.5em;
-    width: 28em;
-}
-
-#new img {
-    width: 100%;
-    max-width: 11em;
-    height: auto;
-    margin-top: 1.5em;
-    margin-left: 7em;
-    margin-right: 7em;
-}
-
-#new h2 {
-    font-family: var(--font-2);
-    font-size: 1.5em;
-    text-align: center;
-    margin-top: 2em;
-}
-
-#health {
-    border: solid 3px var(--colour-2);
-    border-radius: 1em;
-    padding: 2.5em;
-    width: 28em;
-}
-
-#health img {
-    width: 100%;
-    max-width: 10em;
-    height: auto;
-    margin-top: 1.5em;
-    margin-left: 7.5em;
-    margin-right: 7.5em;
-}
-
-#health h2 {
-    font-family: var(--font-2);
-    font-size: 1.5em;
-    text-align: center;
-    margin-top: 2em;
-}
-
-#expecting {
-    border: solid 3px var(--colour-2);
-    border-radius: 1em;
-    padding: 2.5em;
-    width: 28em;
-}
-
-#expecting img {
-    width: 100%;
-    max-width: 11em;
-    height: auto;
-    margin-top: 1.5em;
-    margin-left: 6em;
-    margin-right: 6em;
-}
-
-#expecting h2 {
-    font-family: var(--font-2);
-    font-size: 1.5em;
-    text-align: center;
-    margin-top: 2em;
-}
-
-#home {
-    border: solid 3px var(--colour-2);
-    border-radius: 1em;
-    padding: 2.5em;
-    width: 28em;
-}
-
-#home img {
-    width: 100%;
-    max-width: 12em;
-    height: auto;
-    margin-top: 1.5em;
-    margin-left: 6em;
-    margin-right: 6em;
-}
-
-#home h2 {
-    font-family: var(--font-2);
-    font-size: 1.5em;
-    text-align: center;
-    margin-top: 2em;
-}
-
-#student {
-    border: solid 3px var(--colour-2);
-    border-radius: 1em;
-    padding: 2.5em;
-    width: 28em;
-}
-
-#student img {
-    width: 100%;
-    max-width: 10em;
-    height: auto;
-    margin-top: 1.5em;
-    margin-left: 7.5em;
-    margin-right: 7.5em;
-}
-
-#student h2 {
-    font-family: var(--font-2);
-    font-size: 1.5em;
-    text-align: center;
-    margin-top: 2em;
 }
 
 .checkbox_container input {
