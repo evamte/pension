@@ -1,4 +1,7 @@
-  html {
+ /*IMPORT FONTS */
+
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -55,18 +58,17 @@ body {
 .menu_icons {
     position: relative;
     left: 96em;
-    top: -1em;
     width: 8em;
 }
 
 .icons {
     position: absolute;
     margin-top: 1.7em;
-    display: flex;
 }
 
 .menubar li {
     display: inline-flex;
+    flex-direction: row;
     margin-right: 2.5em;
 }
 
@@ -90,10 +92,8 @@ body {
 .menu a {
     text-decoration: none;
     color: gray;
-    margin: 0;
-    line-height: 70px;
     font-family: var(--font-2);
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding-right: 2.5em;
     clear: right;
     display: inline-flex;
@@ -145,19 +145,8 @@ span:hover {
     z-index: 5;
 }
 
-.search {
-    max-width: 2.5em;
-    height: 2.9em;
-}
-
-.contact {
+.icons li img {
     max-width: 3em;
-    height: 3em;
-}
-
-.lock {
-    max-width: 2.7em;
-    height: 2.7em;
 }
 
 /* HEADER */
@@ -177,7 +166,7 @@ span:hover {
 
 .background {
     width: 100%;
-    height: 50em;
+    height: 42em;
     object-fit: cover;
     z-index: -1;
 }
@@ -190,7 +179,7 @@ header {
 .title {
     text-align: center;
     color: var(--colour-5);
-    font-size: 7em;
+    font-size: 4em;
     margin: 0;
     font-family: var(--font-2);
     padding: 0.5em;
@@ -200,9 +189,9 @@ header {
 .description {
     text-align: center;
     color: var(--colour-5);
-    font-size: 2em;
-    padding-left: 5em;
-    padding-right: 5em;
+    font-size: 1.5em;
+    margin-left: 10em;
+    margin-right: 10em;
     margin-top: 0;
     font-family: var(--font-2);
     padding: 0.5em;
@@ -214,15 +203,15 @@ header {
 #situation {
     background-color: white;
     padding: 2em;
-    margin: 2em;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 7em;
     margin-bottom: 10em;
-    border-radius: 2em;
 }
 
 #situation h1 {
     font-family: var(--font-2);
-    font-size: 4em;
+    font-size: 3em;
     margin-bottom: 0em;
     color: var(--colour-2);
     text-align: center;
@@ -230,10 +219,11 @@ header {
 
 #situation p {
     font-family: var(--font-2);
-    font-size: 1.6em;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    font-size: 1.4em;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-bottom: 0em;
+    text-align: center;
     color: var(--colour-2);
     line-height: 1.5em;
 }
@@ -241,8 +231,8 @@ header {
 #list_situations {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    grid-gap: 6vw;
-    margin: 5vw;
+    grid-gap: 3vw;
+    margin: 3vw;
     padding: 0vw;
 }
 
@@ -255,16 +245,16 @@ header {
 
 #list_situations > div h2 {
     font-family: var(--font-2);
-    font-size: 1.5em;
+    font-size: 1.4em;
     text-align: center;
     margin-top: 2em;
     margin-bottom: 2em;
 }
 
 #list_situations > div {
-    border: solid 3px var(--colour-2);
+    border: solid 0.05em var(--colour-2);
     border-radius: 1em;
-    padding: 2.5em;
+    padding: 10%;
     display: block;
     width: 18em;
     height: 18em;
@@ -278,11 +268,11 @@ header {
 .checkbox_container {
     position: relative;
     cursor: pointer;
-    margin: 0 40px 0 0;
+    margin: 0 1em 0 0;
     font-size: 2.5em;
     line-height: 2.5em;
     display: none;
-    width: 56px;
+    width: 1em;
     float: right;
     display: block;
 }
@@ -301,7 +291,7 @@ header {
 
 .checkbox_container input:checked + .checkmark {
     background-color: var(--colour-2);
-    border: 1px solid var(--colour-2);
+    border: 0.02em solid var(--colour-2);
 }
 
 .checkbox_container:hover .checkmark {
@@ -322,7 +312,6 @@ header {
 }
 
 .btn_container button {
-    border-color: var(--colour-5);
     background-color: var(--colour-1);
     color: var(--colour-5);
     cursor: pointer;
@@ -330,6 +319,7 @@ header {
     padding-right: 10em;
     padding-left: 10em;
     font-size: 1.6em;
+    border: solid var(--colour-5);
     border-radius: 1em;
     margin-bottom: 2.5em;
 }
@@ -350,7 +340,8 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     grid-gap: 0em;
-    margin: 2em;
+margin-left: 10%;
+    margin-right: 10%;
     padding: 3vw;
     margin-top: 0em;
     margin-bottom: 0em;
