@@ -560,11 +560,12 @@ main {
 ul > li {
     cursor: pointer;
     padding: 1em;
+    border-radius: 1em;
 }
 
 ul > li:hover {
     background: var(--colour-3);
-    color: white;
+    color: var(--colour-2);
 }
 
 #info_right img {
