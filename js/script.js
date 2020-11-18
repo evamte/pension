@@ -4,29 +4,91 @@ window.addEventListener('DOMContentLoaded', getData);
 function getData() {
     fetch("http://createsimple.dk/ap_data/wordpress/wp-json/wp/v2/life_situation")
         .then(response => response.json())
-        .then(handleData);
+        .then(showText);
 }
 
-function handleData(life_situation) {
-    //console.log(situation)
-    life_situation.forEach(showSituation)
-}
+allData = {
+    lifeSituation: {
+        img_src: life_situation.icon.guid,
+        info_right_h2: life_situation.title.rendered,
+        info_right_h3: life_situation.short_description,
+        info_right_p: life_situation.long_description,
+        call_us_a: life_situation.phone,
+        email_us_a: life_situation.email,
+    },
 
-function showSituation(life_situation) {
-    //console.log(situation)
-    const template = document.querySelector("template").content;
+    lifeSituation2: {
+        img_src: life_situation.icon.guid,
+        info_right_h2: life_situation.title.rendered,
+        info_right_h3: life_situation.short_description,
+        info_right_p: life_situation.long_description,
+        call_us_a: life_situation.phone,
+        email_us_a: life_situation.email,
+    },
 
-    const copy = template.cloneNode(true);
-    console.log(template)
+    lifeSituation3: {
+        img_src: life_situation.icon.guid,
+        info_right_h2: life_situation.title.rendered,
+        info_right_h3: life_situation.short_description,
+        info_right_p: life_situation.long_description,
+        call_us_a: life_situation.phone,
+        email_us_a: life_situation.email,
+    },
 
-    copy.querySelector("img").src = life_situation.icon.guid;
-    copy.querySelector("#info_right h2").textContent = life_situation.title.rendered;
-    copy.querySelector("#info_right h3").textContent = life_situation.short_description;
-    copy.querySelector("#info_right p").textContent = life_situation.long_description;
-    copy.querySelector(".call_us a").textContent = life_situation.phone;
-    copy.querySelector(".email_us a").textContent = life_situation.email;
+    lifeSituation4: {
+        img_src: life_situation.icon.guid,
+        info_right_h2: life_situation.title.rendered,
+        info_right_h3: life_situation.short_description,
+        info_right_p: life_situation.long_description,
+        call_us_a: life_situation.phone,
+        email_us_a: life_situation.email,
+    },
 
-    document.querySelector("main").appendChild(copy);
+    lifeSituation5: {
+        img_src: life_situation.icon.guid,
+        info_right_h2: life_situation.title.rendered,
+        info_right_h3: life_situation.short_description,
+        info_right_p: life_situation.long_description,
+        call_us_a: life_situation.phone,
+        email_us_a: life_situation.email,
+    },
+
+    lifeSituation6: {
+        img_src: life_situation.icon.guid,
+        info_right_h2: life_situation.title.rendered,
+        info_right_h3: life_situation.short_description,
+        info_right_p: life_situation.long_description,
+        call_us_a: life_situation.phone,
+        email_us_a: life_situation.email,
+    },
+
+    lifeSituation7: {
+        img_src: life_situation.icon.guid,
+        info_right_h2: life_situation.title.rendered,
+        info_right_h3: life_situation.short_description,
+        info_right_p: life_situation.long_description,
+        call_us_a: life_situation.phone,
+        email_us_a: life_situation.email,
+    },
+
+    lifeSituation8: {
+        img_src: life_situation.icon.guid,
+        info_right_h2: life_situation.title.rendered,
+        info_right_h3: life_situation.short_description,
+        info_right_p: life_situation.long_description,
+        call_us_a: life_situation.phone,
+        email_us_a: life_situation.email,
+    },
+
+    lifeSituation9: {
+        img_src: life_situation.icon.guid,
+        info_right_h2: life_situation.title.rendered,
+        info_right_h3: life_situation.short_description,
+        info_right_p: life_situation.long_description,
+        call_us_a: life_situation.phone,
+        email_us_a: life_situation.email,
+    }
+
 }
 
 var buttonIdToTabId = {
@@ -55,21 +117,34 @@ var buttonClickedStates = {
 }
 
 var tabToText = {
-    situation_1_tab: 'situation text number 1',
-    situation_2_tab: 'situation text number 2',
-    situation_3_tab: 'situation text number 3',
-    situation_4_tab: 'situation text number 4',
-    situation_5_tab: 'situation text number 5',
-    situation_6_tab: 'situation text number 6',
-    situation_7_tab: 'situation text number 7',
-    situation_8_tab: 'situation text number 8',
-    situation_9_tab: 'situation text number 9',
+    situation_1_tab: 'lifeSituation',
+    situation_2_tab: 'lifeSituation2',
+    situation_3_tab: 'lifeSituation3',
+    situation_4_tab: 'lifeSituation4',
+    situation_5_tab: 'lifeSituation5',
+    situation_6_tab: 'lifeSituation6',
+    situation_7_tab: 'lifeSituation7',
+    situation_8_tab: 'lifeSituation8',
+    situation_9_tab: 'lifeSituation9',
 }
 
-window.onload = function() {
+window.onload = function () {
     document.getElementById('info_right').innerHTML = tabToText.situation_1_tab;
 };
 
 function showText(tabId) {
-    document.getElementById('info_right').innerHTML = tabToText[tabId];
+
+    const template = document.querySelector("template").content;
+    const copy = template.cloneNode(true);
+
+    copy.querySelector("img").src = allData.lifeSituation.img_src;
+    copy.querySelector("#info_right h2").textContent = allData.lifeSituation.info_right_h2;
+    copy.querySelector("#info_right h3").textContent = allData.lifeSituation.info_right_h3;
+    copy.querySelector("#info_right p").textContent = allData.lifeSituation.info_right_p;
+    copy.querySelector(".call_us a").textContent = allData.lifeSituation.call_us_a;
+    copy.querySelector(".email_us a").textContent = allData.lifeSituation.email_us_a;
+
+    document.getElementById('info_right').innerHTML = tabToText[lifeSituation];
+
+    document.querySelector("main").appendChild(copy);
 }
