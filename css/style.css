@@ -176,6 +176,12 @@ span:hover {
     z-index: -1;
 }
 
+.fifth {
+    position: absolute;
+    height: 50%;
+    right: 0;
+    z-index: -1;
+}
 header {
     display: flex;
     flex-direction: column;
@@ -235,7 +241,7 @@ header {
 
 #list_situations {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 3vw;
     margin: 6vw;
 
@@ -321,8 +327,8 @@ header {
     color: var(--colour-5);
     cursor: pointer;
     padding: 1em;
-    padding-right: 10em;
-    padding-left: 10em;
+    padding-right: 20%;
+    padding-left: 20%;
     font-size: 1.6em;
     border: solid var(--colour-5);
     border-radius: 1em;
@@ -418,8 +424,8 @@ margin-left: 10%;
 .help h5 {
     font-family: var(--font-2);
     font-size: 1.2em;
-    margin-left: 3em;
-    margin-right: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .call_us h4 {
@@ -825,7 +831,8 @@ footer .address p {
 }
 
 .address {
-    margin-top: -6em;
+    margin-top: 9em;
+    margin-bottom: -8em;
 }
 
 #container {
@@ -865,11 +872,34 @@ footer .address p {
 
 /* media queries */
 
+@media only screen and (max-width: 1400px) {
+        #feedback {
+        display: none;
+    }
+
+        #box {
+        display: none;
+    }
+
+    #container {
+        display: none;
+    }
+
+
+}
 
 @media only screen and (max-width: 720px) {
 
-
-
+    .title {
+        font-size: 2em;
+    }
+    .fifth {
+        height: 10em;
+    }
+    .background {
+        height: 18em;
+        width: 100%;
+    }
     label {
         display: block;
         cursor: pointer;
@@ -903,6 +933,43 @@ footer .address p {
         height: 5em;
     }
 
+
+        .help {
+    display: flex;
+        flex-direction: column;
+        margin-top: -2em;
+}
+
+    .description {
+    text-align: center;
+    color: var(--colour-5);
+    font-size: 1em;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 0;
+    font-family: var(--font-2);
+    padding: 0.5em;
+    z-index: -1;
+}
+
+    #box {
+        display: none;
+    }
+
+    #feedback {
+        display: none;
+    }
+    .arrow {
+        display: none;
+    }
+
+    #container {
+        display: none;
+    }
+
+    .address {
+        display: none;
+    }
 
 
 
