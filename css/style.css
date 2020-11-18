@@ -538,16 +538,18 @@ main {
     padding: 3vw;
     margin-top: 0em;
     margin-bottom: 0em;
-    background-color: var(--colour-5);
+    background-color: white;
+    border-radius: 2em;
 }
 
 #info_left {
     color: var(--colour-2);
-    background-color: var(--colour-3);
+    background-color: white;
+    border-radius: 2em;
     font-family: var(--font-2);
     font-size: 1.2em;
     line-height: 2.3em;
-    border-bottom: 2px solid var(--colour-3);
+    border-bottom: 2px;
     grid-column: 1 / -1;
 }
 
@@ -558,6 +560,11 @@ main {
 ul > li {
     cursor: pointer;
     padding: 1em;
+}
+
+ul > li:hover {
+    background: var(--colour-3);
+    color: white;
 }
 
 #info_right img {
