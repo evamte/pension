@@ -2,12 +2,14 @@ window.addEventListener('DOMContentLoaded', getData);
 
 
 function getData() {
-    fetch("http://createsimple.dk/ap_data/wordpress/wp-json/wp/v2/life_situation")
+    let life_situation = fetch("http://createsimple.dk/ap_data/wordpress/wp-json/wp/v2/life_situation")
         .then(response => response.json())
-        .then(showText);
+        //.then(showText);
+
+        .then(() => console.log(life_situation))
 }
 
-allData = {
+/*let allData = {
     lifeSituation: {
         img_src: life_situation.icon.guid,
         info_right_h2: life_situation.title.rendered,
@@ -89,8 +91,9 @@ allData = {
         email_us_a: life_situation.email,
     }
 
-}
+}*/
 
+/*
 var buttonIdToTabId = {
     situation_1_button: "situation_1_tab",
     situation_2_button: "situation_2_tab",
@@ -148,3 +151,4 @@ function showText(tabId) {
 
     document.querySelector("main").appendChild(copy);
 }
+*/
