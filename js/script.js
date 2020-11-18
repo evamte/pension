@@ -39,6 +39,8 @@ function displayData(event) {
 
     } else {
         showText(myData[0]); // DEFAULT 1. TIME
+
+        document.querySelector("#situation_1_tab").classList.add("clicked");
     }
 }
 
