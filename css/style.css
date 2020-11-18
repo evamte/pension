@@ -1,4 +1,4 @@
-html {
+  html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
@@ -247,6 +247,7 @@ header {
     padding: 0vw;
 }
 
+<<<<<<< HEAD
 #retirement {
     border: solid 3px var(--colour-2);
     border-radius: 1em;
@@ -412,19 +413,28 @@ header {
     max-width: 12.5em;
     height: auto;
     margin-top: 1.5em;
+=======
+#list_situations > div img {
+    width: auto;
+    max-width: 6em;
+    margin-left: 6em;
+    margin-right: 6em;
+>>>>>>> origin/master
 }
 
-#home h2 {
+#list_situations > div h2 {
     font-family: var(--font-2);
     font-size: 1.5em;
     text-align: center;
     margin-top: 2em;
+    margin-bottom: 2em;
 }
 
-#student {
+#list_situations > div {
     border: solid 3px var(--colour-2);
     border-radius: 1em;
     padding: 2.5em;
+<<<<<<< HEAD
     width: 28em;
 }
 
@@ -434,12 +444,12 @@ header {
     height: auto;
     margin-top: 1.5em;
 }
+=======
+    display: block;
+    width: 18em;
+    height: 18em;
+>>>>>>> origin/master
 
-#student h2 {
-    font-family: var(--font-2);
-    font-size: 1.5em;
-    text-align: center;
-    margin-top: 2em;
 }
 
 .checkbox_container input {
@@ -517,25 +527,27 @@ header {
 
 /* INFORMATION */
 
-main {
+#information {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     grid-gap: 0em;
     margin: 2em;
     padding: 3vw;
     margin-top: 0em;
     margin-bottom: 0em;
-    background-color: var(--colour-5);
+    background-color: white;
+    border-radius: 2em;
 }
 
 #info_left {
     color: var(--colour-2);
-    background-color: var(--colour-3);
+    background-color: white;
+    border-radius: 2em;
     font-family: var(--font-2);
     font-size: 1.2em;
     line-height: 2.3em;
-    border-bottom: 2px solid var(--colour-3);
-    grid-column: 1 / -1;
+    border-bottom: 2px;
+    grid-column: 1 / 2;
 }
 
 #info_left > ul {
@@ -545,6 +557,12 @@ main {
 ul > li {
     cursor: pointer;
     padding: 1em;
+    border-radius: 1em;
+}
+
+ul > li:hover {
+    background: var(--colour-3);
+    color: var(--colour-2);
 }
 
 #info_right img {

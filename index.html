@@ -154,37 +154,37 @@
         <div id="information">
             <div id="info_left">
                 <ul>
-                    <li id="situation_1_tab" onclick="showText(this.id)">I am approaching retirement</li>
-                    <li id="situation_2_tab" onclick="showText(this.id)">I am getting married</li>
-                    <li id="situation_3_tab" onclick="showText(this.id)">I am leaving or changing my job</li>
-                    <li id="situation_4_tab" onclick="showText(this.id)">I am getting divorced</li>
-                    <li id="situation_5_tab" onclick="showText(this.id)">I am new to Akademiker Pension</li>
-                    <li id="situation_6_tab" onclick="showText(this.id)">I have health issues</li>
-                    <li id="situation_7_tab" onclick="showText(this.id)">I have children or am expecting</li>
-                    <li id="situation_8_tab" onclick="showText(this.id)">I am buying a home</li>
-                    <li id="situation_9_tab" onclick="showText(this.id)">I am a student</li>
+                    <li id="situation_1_tab" data-situation_list="0">I am approaching retirement</li>
+                    <li id="situation_2_tab" data-situation_list="1">I am getting married</li>
+                    <li id="situation_3_tab" data-situation_list="2">I am leaving or changing my job</li>
+                    <li id="situation_4_tab" data-situation_list="3">I am getting divorced</li>
+                    <li id="situation_5_tab" data-situation_list="4">I am new to Akademiker Pension</li>
+                    <li id="situation_6_tab" data-situation_list="5">I have health issues</li>
+                    <li id="situation_7_tab" data-situation_list="6">I have children or am expecting</li>
+                    <li id="situation_8_tab" data-situation_list="7">I am buying a home</li>
+                    <li id="situation_9_tab" data-situation_list="8">I am a student</li>
                 </ul>
             </div>
-            <template>
-                <div id="info_right">
-                    <img src="">
-                    <h2>Title</h2>
-                    <h3>Short Description</h3>
-                    <p>Long Description</p>
-                    <h4>Need help?</h4>
-                    <div class="help">
-                        <div class="call_us">
-                            <h4>Call Us</h4>
-                            <a href>Phone</a>
-                        </div>
-                        <h5>or</h5>
-                        <div class="email_us">
-                            <h4>E-Mail Us</h4>
-                            <a href="mailto:medlem@akademikerpension.dk">Email</a>
-                        </div>
+            <div id="info_right"> </div>
+
+            <template id="template">
+                <img class="image" src="">
+                <h2>Title</h2>
+                <h3>Short Description</h3>
+                <p>Long Description</p>
+                <h4>Need help?</h4>
+                <div class="help">
+                    <div class="call_us">
+                        <h4>Call Us</h4>
+                        <a href>Phone</a>
                     </div>
-                    <button>Learn More</button>
+                    <h5>or</h5>
+                    <div class="email_us">
+                        <h4>E-Mail Us</h4>
+                        <a href="mailto:medlem@akademikerpension.dk">Email</a>
+                    </div>
                 </div>
+                <button>Learn More</button>
             </template>
         </div>
     </main>
