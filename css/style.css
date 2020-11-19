@@ -1,3 +1,8 @@
+/*FONTS IMPORTED*/
+
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300;400&family=Montserrat&display=swap');
+
+/*GENERAL OUTLINE*/
 html {
     scroll-behavior: smooth;
     overflow: inherit;
@@ -975,7 +980,7 @@ footer .address p {
         display: none;
     }
 
-    div#situation {
+    #retirement {
         display: none;
     }
 
